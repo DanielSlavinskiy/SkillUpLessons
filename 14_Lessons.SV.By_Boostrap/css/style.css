@@ -1,0 +1,29 @@
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+}
+a{
+    color: white;
+    margin: 1vh;
+    align-self: center;
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.05px;
+    font-size: 1.2em;
+}
+header{
+    display: flex;
+   align-items: center;
+}
+#logo {
+    
+    width:10vh;
+    height: 10vh;
+}
+#portait{
+    width: auto;
+    height: auto;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}

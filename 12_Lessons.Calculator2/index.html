@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box">
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <div class="col-2 btn-lg border border-0">
+                            <h6 class="text-center">Calculator</h6>
+                        </div>
+                        <div class="col-7 text-center border border-0"></div>
+                        <button class="col-1 btn-lg text-center border border-dark" type="button">-</button>
+                        <button class="col-1 btn-lg text-center border border-dark" type="button">&#9744;</button>
+                        <button class="col-1 btn-lg text-center border border-dark" type="button">x</button>
+                    </div>
+                </div>
+                <div class="col-4 btn-lg border border-0"></div>
+            </div>
+            <div class="row">
+                <button class="col-2 btn-lg text-center border border-dark" type="button">&Xi;</button>
+                <div class="col-4 border border-0">
+                    <h5 class="text-center">Standart</h5>
+                </div>
+
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">&#9203;</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+
+            <form class="row" name="form">
+
+                <input name="textview" class="textview col-8 input-lg border border-dark text-left"
+                    style="width: inherit; height: 15vh" placeholder="0">
+
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </form>
+            <div class="row">
+                <div class="col-8">
+                    <div class="row">
+                        <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">MC</button >
+                        <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">MR</button >
+                        <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">M+</button >
+                        <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">M-</button >
+                        <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">MS</button >
+                        <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">M*</button >
+                    </div>
+                    <div class="col-4 border border-0"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">%</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">&radic;</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button">X &sup2;</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="1/X"
+                 onclick="insert('1/X')">1/X</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+
+            <div class="row">
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="CE"
+                    onclick="insert('CE')">CE</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="C"
+                    onclick="clean()">C</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="&#8592;"
+                    onclick="back()">&#8592;</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="&#247;"
+                    onclick="insert('&#247;')">&#247;</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+            <div class="row">
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="7"
+                    onclick="insert(7)" style="background-color: lightslategrey">7</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="8"
+                    onclick="insert(8)" style="background-color: lightslategrey">8</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="9"
+                    onclick="insert(9)" style="background-color: lightslategrey">9</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="&#215;"
+                    onclick="insert('&#215;')">&#215;</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+            <div class="row">
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="4"
+                    onclick="insert(4)" style="background-color: lightslategrey">4</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="5"
+                    onclick="insert(5)" style="background-color: lightslategrey">5</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="6"
+                    onclick="insert(6)" style="background-color: lightslategrey">6</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="-"
+                    onclick="insert('-')">-</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+            <div class="row">
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="1"
+                    onclick="insert(1)" style="background-color: lightslategrey">1</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="2"
+                    onclick="insert(2)" style="background-color: lightslategrey">2</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="3"
+                    onclick="insert(3)" style="background-color: lightslategrey">3</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="+"
+                    onclick="insert('+')">+</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+            <div class="row">
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="&#177;"
+                    onclick="insert('&#177;')">&#177;</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button"
+                    style="background-color: lightslategrey" value="0" onclick="insert(0)">0</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="."
+                    onclick="insert('.')">.</button>
+                <button class="col-2 btn-lg input-lg text-center border border-dark" type="button" value="="
+                    onclick="equal()">=</button>
+                <div class="col-4 btn-lg input-lg border border-0"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function insert(num) {
+            document.form.textview.value = document.form.textview.value + num
+        }
+        function equal() {
+            var exp = document.form.textview.value;
+            if (exp) {
+                document.form.textview.value = eval(document.form.textview.value)
+            }
+        }
+        function clean() {
+            document.form.textview.value = ""
+        }
+        function back() {
+            var exp = document.form.textview.value;
+            document.form.textview.value = exp.substring(0, exp.length - 1)
+        }
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

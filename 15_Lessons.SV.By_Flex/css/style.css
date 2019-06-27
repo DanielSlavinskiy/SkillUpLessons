@@ -1,0 +1,82 @@
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+}
+a{
+    color: black;
+    margin: 1vh;
+    align-self: center;
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    letter-spacing: 0.05px;
+    font-size: 1.2em;
+    text-decoration-line: none;
+}
+body{
+    font-family:  'Montserrat', sans-serif;
+}
+.container{
+    margin:0vh 0vh 4vw 4vw ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+}
+section{
+    width: 65%;
+   margin: 5px;
+   box-sizing: border-box;
+}
+aside{
+    padding: 5px;
+    width: 25%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+}
+.main-portrait{
+    
+    height: auto;
+    margin: 5px;
+    
+}
+#portrait{
+    width: 80%;
+}
+.main-info{
+    width: 60%;
+    margin: 5px;
+}
+.list{
+    display: flex;
+    justify-content:flex-start;
+    list-style: none;
+    color: orangered;
+    
+
+}
+h1{
+    color: red;
+}
+.btn{
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    width: 3vw;
+    height: 7vh;
+    margin: 3px;
+    
+}
+.data{
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.current-rating-end{
+    color: black;
+}

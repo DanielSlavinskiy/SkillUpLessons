@@ -1,0 +1,32 @@
+html{
+    font-size:12px;
+}
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+}
+#container{
+    padding:20px;
+    width: 80%;
+    margin: auto;
+    background: rgb(221, 206, 206);
+    
+}
+div{
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: green;
+    text-align: justify;
+    text-align-last: right;
+    line-height: 1.4;
+    letter-spacing: 0.05px;
+    font-size: 1.5em;
+    padding: 10px;
+    font-style: normal;
+}
+p:first-line{
+color: red;
+ }
+ p{
+    
+ }
+    

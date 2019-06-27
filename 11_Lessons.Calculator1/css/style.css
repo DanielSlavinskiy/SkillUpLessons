@@ -1,0 +1,14 @@
+table{
+    background-color: darkgray;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 3px solid darkslategrey;
+}
+[class="row no-gutters"]{
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    justify-content: center;
+   
+}

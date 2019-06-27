@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.table1{
+    width: 500px;
+    border: 3px solid black;
+    position: relative;
+}
+.title1, .title2{
+    border: 1px solid black;
+}
+
+
+
+/* form1 */
+.box{
+    box-sizing: border-box;
+    width: 212px;
+    position: relative;
+    border: 3px solid black;
+
+}
+.box1{
+    box-sizing: border-box;
+    width: 100px;
+    height: 20px;
+    border:black solid 1px  ;
+    background: gray;
+    display: inline-block;
+    float: left;
+}
+.box2{
+    width: 196px;
+    float: left;
+    position: relative;
+}
+.box3{
+    width: 100px;
+    height: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.box-row{
+    display: inline-block;
+    float: left;
+    position: relative;
+    border: 1px solid black;
+    padding: 2px;
+}
+textarea{
+    width:196px; 
+}
+select{
+    width: inherit;
+}
+[type="text"]{
+    width: 96px;
+}
+/* form2 */
+.table2{
+    border: 5px solid black;
+    position: relative;
+    
+    width: 600px;
+}
+.title3{
+    border: 1px solid black;
+    width: 300px;
+    height: 20px;
+    background: grey;
+}
+.title4{
+    border: 1px solid black;
+    width: 300px;
+    height: 20px;
+    background: rgb(191, 206, 212);
+}
+.line1{
+    box-sizing: border-box;
+}
+.title5{
+    border: 1px solid black;;
+    width: 300px;
+    height: 40px;
+}
+
+.title6{
+    vertical-align: 5px;
+    border: 1px solid black;
+    width: 300px;
+    height: 40px;   
+}
+.title7{
+    border: 1px solid black;
+    width: 600px;
+    height: 100px;   
+}
+.title8{
+    border: 1px solid black;
+    width: 600px; 
+    height: 90px;
+}
+.title9{
+    border: 1px solid black;
+    width: 600px;
+    height: 20px;
+}
+.container{
+    top: 50px;
+    margin: 100px;
+    list-style-type: square;
+}
+ul{
+    list-style-type: circle;
+}

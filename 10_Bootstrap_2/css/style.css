@@ -1,0 +1,14 @@
+.row{
+    background: gray;
+    padding: 4px;
+    margin: 4px;
+    justify-content: center;
+    
+}
+[class="row justify-content-center"]{
+    justify-content: center;
+}
+[class="row col-4"]{
+    margin: none;
+}
+

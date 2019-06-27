@@ -1,0 +1,14 @@
+.container{
+    background: gray;
+    height: 100%;
+}
+.container>.row {
+  
+   height: 40vh;
+}
+.row:last-child{
+    height:20vh ;
+}
+.container>.row>div{
+    border: 3px ridge grey; 
+}
