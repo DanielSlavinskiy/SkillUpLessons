@@ -1,0 +1,98 @@
+.section, .section .box1, .section .box3, .section .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Muli',sans-serif;
+  color: #fff; }
+
+.section {
+  background: lightgrey url(../img/agency-final.jpg) fixed center no-repeat;
+  background-size: cover;
+  flex-flow: column;
+  height: 100vh; }
+  .section .box1, .section .box3 {
+    padding: 50px;
+    flex-flow: column;
+    width: 50%;
+    text-align: center; }
+  .section .box2 {
+    align-items: flex-start;
+    width: 60%;
+    text-align: center; }
+  .section .box3 {
+    padding: 10vh; }
+  .section figure {
+    padding: 20px; }
+
+button {
+  width: 20vh;
+  height: 6vh;
+  background: linear-gradient(45deg, purple, blue);
+  border-radius: 5vh;
+  border: none;
+  color: #fff; }
+
+@media screen and (max-width: 540px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: auto;
+    width: 100vw; }
+    .section .box1, .section .box3 {
+      width: 70vw; }
+    .section .box2 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
+    .section figure {
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+
+  p.txt {
+    padding: 20px;
+    width: 30vw;
+    align-self: stretch; } }
+@media (min-width: 540px) and (max-width: 960px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: auto; }
+    .section .box1, .section .box3 {
+      width: 70vw; }
+    .section .box2 {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between; }
+    .section figure {
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+
+  p.txt {
+    padding: 10px;
+    width: 20vw; } }

@@ -1,0 +1,109 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh;
+    font-family: 'Rubik Mono One', Courier, monospace;
+}
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 90vh;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    .item-box1{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        width: 20vh;
+        padding: 5px; 
+        border: 1px solid #000;
+        background-color: red;
+    }
+    .item-box2{
+        @extend .item-box1;
+        background-color: brown;
+    }
+    .item-box3{
+        @extend .item-box1;
+        background-color: purple;
+    }
+    .item-box4{
+        @extend .item-box1;
+        background-color: green;
+    }
+}
+span{
+    font-size: 2rem;
+}
+@media (max-width: 640px){
+    .container{
+        height: 100vh;
+        flex-flow: column nowrap;
+    }
+} 
+@media only screen and (max-width: 1200px) and (min-width: 900px) and (orientation:landscape){
+    body{
+        height: 100vh;
+    }
+    .container{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: 90vh;
+        align-content: center;
+        .item-box3{
+            margin: 20vh;
+
+            align-self: flex-end;
+        
+            }
+                .item-box4{
+                    margin: 20vh;
+            }
+            .item-box1{
+                margin: 20vh;
+            }
+            .item-box2{
+                margin: 20vh;
+            }
+            }
+    
+    
+}
+@media only screen and (max-width: 900px) and (min-width: 640px) and (orientation:landscape){
+    body{
+        height: 100vh;
+    }
+    .container{
+        flex-flow: row wrap;
+        justify-content: center;
+        height: 90vh;
+        align-content: center;
+        .item-box3{
+            margin: 10vh;
+
+            
+        
+            }
+                .item-box4{
+                    margin: 10vh;
+            }
+            .item-box1{
+                margin:10vh;
+            }
+            .item-box2{
+                margin: 10vh;
+            }
+            }
+    
+    
+}
